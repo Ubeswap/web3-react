@@ -8,7 +8,7 @@ function parseSendReturn(sendReturn: SendReturnResult | SendReturn): any {
   return sendReturn.hasOwnProperty('result') ? sendReturn.result : sendReturn
 }
 
-export class NoEthereumProviderError extends Error {
+export class NoCeloProviderError extends Error {
   public constructor() {
     super()
     this.name = this.constructor.name
@@ -68,7 +68,7 @@ export class InjectedConnector extends AbstractConnector {
 
   public async activate(): Promise<ConnectorUpdate> {
     if (!window.celo) {
-      throw new NoEthereumProviderError()
+      throw new NoCeloProviderError()
     }
 
     if (window.celo.on) {
@@ -110,7 +110,7 @@ export class InjectedConnector extends AbstractConnector {
 
   public async getChainId(): Promise<number | string> {
     if (!window.celo) {
-      throw new NoEthereumProviderError()
+      throw new NoCeloProviderError()
     }
 
     let chainId
@@ -153,7 +153,7 @@ export class InjectedConnector extends AbstractConnector {
 
   public async getAccount(): Promise<null | string> {
     if (!window.celo) {
-      throw new NoEthereumProviderError()
+      throw new NoCeloProviderError()
     }
 
     let account

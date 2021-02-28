@@ -1,15 +1,15 @@
 {
-  "name": "@web3-react/injected-connector",
+  "name": "@ubeswap/injected-connector",
   "publishConfig": {
     "access": "public"
   },
   "version": "6.0.7",
-  "description": "A simple, maximally extensible, dependency minimized framework for building modern Ethereum dApps",
+  "description": "A simple, maximally extensible, dependency minimized framework for building modern Celo dApps",
   "keywords": [
     "react",
     "react-hooks",
     "hooks",
-    "ethereum",
+    "celo",
     "javascript",
     "typescript",
     "web3",
@@ -18,10 +18,10 @@
     "dapp",
     "metamask"
   ],
-  "author": "Noah Zinsmeister <noahwz@gmail.com>",
+  "author": "Brian Li <brian@ubeswap.org>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/NoahZinsmeister/web3-react.git"
+    "url": "git://github.com/Ubeswap/web3-react.git"
   },
   "main": "dist/index.js",
   "module": "dist/injected-connector.esm.js",
