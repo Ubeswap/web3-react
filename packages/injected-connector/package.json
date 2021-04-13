@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "6.1.0",
+  "version": "6.0.9-celo",
   "description": "A simple, maximally extensible, dependency minimized framework for building modern Celo dApps",
   "keywords": [
     "react",
